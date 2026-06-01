@@ -85,6 +85,16 @@ Fue apoyo mutuo de compañeros de otras secciones.
 ---
 
 
+## 📝 Conclusión
+ 
+El desarrollo de este proyecto permitió aplicar de forma práctica los contenidos de la Unidad 3, integrando JavaScript como lenguaje de interactividad en un sitio web real. A través de la construcción de la galería y el formulario de contacto, se trabajaron habilidades clave como la manipulación del DOM, el manejo de eventos, la validación de formularios del lado del cliente y el uso de funciones reutilizables.
+ 
+El proceso evidenció la importancia de separar responsabilidades por archivo, organizar el código en funciones claras y anticipar los distintos escenarios de interacción del usuario. En conjunto, la evaluación consolidó la comprensión de cómo JavaScript complementa al HTML y CSS para construir experiencias web dinámicas y funcionales.
+
+
+---
+
+
 ## 📦 Nombre del archivo de entrega
 
 
