@@ -1,0 +1,322 @@
+/* === VARIABLES DE COLORES === */
+:root {
+  --negro:  #0a0a0a;
+  --marfil: #f5f0e8;
+  --dorado: #c9a96e;
+  --gris:   #6b6b6b;
+  --oscuro: #1e1e1e;
+}
+
+/* === CUERPO === */
+body {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  background-color: var(--marfil);
+  color: var(--negro);
+}
+
+/* === TÍTULOS === */
+h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3, h4, h5 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  color: var(--gris);
+  line-height: 1.8;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: var(--oscuro) !important;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--marfil) !important;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: var(--dorado) !important;
+}
+
+.nav-link {
+  color: rgba(245, 240, 232, 0.7) !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--dorado) !important;
+}
+
+.nav-link.activo {
+  color: var(--dorado) !important;
+  border-bottom: 1px solid var(--dorado);
+}
+
+/* === HERO === */
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.hero-subtitulo {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dorado);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.hero-imagen-wrapper img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* === LÍNEA DECORATIVA === */
+.divisor-oro {
+  width: 60px;
+  height: 1px;
+  background-color: var(--dorado);
+  margin: 1.5rem 0;
+}
+
+.divisor-centrado {
+  margin: 1.5rem auto;
+}
+
+/* === SECCIÓN OSCURA === */
+.sobre-nosotros {
+  background-color: var(--negro);
+  padding: 5rem 0;
+}
+
+.sobre-nosotros h2,
+.sobre-nosotros h3 {
+  color: var(--dorado);
+}
+
+.sobre-nosotros p {
+  color: rgba(245, 240, 232, 0.6);
+}
+
+/* === BOTONES === */
+.btn-galeria {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.9rem 2rem;
+  background-color: transparent;
+  color: var(--negro);
+  border: 1px solid var(--negro);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-galeria:hover {
+  background-color: var(--negro);
+  color: var(--marfil);
+}
+
+.btn-galeria-claro {
+  color: var(--marfil);
+  border-color: var(--marfil);
+}
+
+.btn-galeria-claro:hover {
+  background-color: var(--dorado);
+  border-color: var(--dorado);
+  color: var(--negro);
+}
+
+/* === GALERÍA: 4 POR FILA === */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .galeria-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+  .galeria-grid { grid-template-columns: 1fr; }
+}
+
+.obra-card-imagen {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.obra-card:hover .obra-card-imagen {
+  transform: scale(1.04);
+}
+
+.obra-card-info {
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.obra-card-numero {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--dorado);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.obra-card-descripcion {
+  font-size: 0.85rem;
+  color: var(--gris);
+  margin-bottom: 0;
+}
+
+/* === ENCABEZADO DE PÁGINAS === */
+.page-header {
+  padding: 7rem 0 3rem;
+  text-align: center;
+}
+
+.page-header-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dorado);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* === FORMULARIO === */
+.form-wrapper {
+  background-color: #fff;
+  padding: 2.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.form-label-custom {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.form-campo {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 0.6rem 0;
+  font-size: 0.95rem;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-campo:focus {
+  border-bottom-color: var(--dorado);
+}
+
+.form-grupo {
+  margin-bottom: 1.8rem;
+}
+
+/* === PANEL DE CONTACTO === */
+.contacto-info {
+  background-color: var(--negro);
+  padding: 2.5rem;
+  height: 100%;
+}
+
+.contacto-info h3 {
+  color: var(--dorado);
+  margin-bottom: 1.5rem;
+}
+
+.contacto-detalle {
+  margin-bottom: 1.2rem;
+}
+
+.contacto-detalle-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--dorado);
+  display: block;
+}
+
+.contacto-detalle-valor {
+  color: rgba(245, 240, 232, 0.8);
+  margin-bottom: 0;
+}
+
+/* === FOOTER === */
+.footer-personalizado {
+  background-color: var(--oscuro);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.footer-brand {
+  font-size: 1rem;
+  color: var(--marfil);
+}
+
+.footer-texto {
+  font-size: 0.75rem;
+  color: rgba(245, 240, 232, 0.4);
+  margin-bottom: 0;
+}
+
+/* === HIGHLIGHT AMARILLO (efecto pincel) === */
+.pincel-highlight {
+  background-color: #f5c842;
+  padding: 0.05em 0.3em;
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in-delay-1 { animation-delay: 0.1s; }
+.fade-in-delay-2 { animation-delay: 0.25s; }
+.fade-in-delay-3 { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === UTILIDADES === */
+.texto-oro    { color: var(--dorado); }
+.texto-marfil { color: var(--marfil); }
+.fondo-negro  { background-color: var(--negro); }
+.sin-radio    { border-radius: 0 !important; }

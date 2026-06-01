@@ -1,0 +1,133 @@
+/* ── Botón de eliminar en cada tarjeta ─────── */
+.btn-eliminar {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: transparent;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  font-size: 0.78rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-eliminar:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+
+/* ── Modal de detalle de obra ───────────────── */
+
+/* El modal empieza oculto */
+#modal-obra {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1050;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Cuando tiene la clase "oculto", se esconde */
+#modal-obra.oculto {
+  display: none;
+}
+
+/* La caja blanca/oscura del modal */
+.modal-caja {
+  background: #1a1410;
+  border: 1px solid #c9a96e;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Botón de cerrar arriba a la derecha */
+.modal-btn-cerrar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 1px solid #c9a96e;
+  color: #c9a96e;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.modal-btn-cerrar:hover {
+  background: #c9a96e;
+  color: #000;
+}
+
+/* Imagen del modal */
+.modal-caja img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+/* Título dentro del modal */
+.modal-caja h2 {
+  color: #c9a96e;
+  margin-bottom: 0.5rem;
+}
+
+/* Párrafos de detalle */
+.modal-caja p {
+  margin-bottom: 0.4rem;
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+
+/* ── Validación del formulario ──────────────── */
+
+/* Campo con error → borde rojo */
+.campo-error {
+  border-color: #e74c3c !important;
+}
+
+/* Campo correcto → borde verde */
+.campo-ok {
+  border-color: #27ae60 !important;
+}
+
+/* Texto de error debajo del campo */
+.texto-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+
+/* Mensajes de resultado del formulario */
+.mensaje-exito {
+  background: rgba(39, 174, 96, 0.1);
+  border: 1px solid #27ae60;
+  color: #27ae60;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.mensaje-error {
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
